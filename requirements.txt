@@ -5,7 +5,7 @@ atomicwrites==1.4.0
 attrs==20.3.0
 black==22.3.0
 Click==8.0.3
-entrypoints==0.2.3
+entrypoints>=0.3  
 flake8==4.0.1
 Flask==2.0.2
 Flask-Login==0.5.0
@@ -29,7 +29,7 @@ pyflakes==2.3.2
 pylint==3.13.0
 pylint-plugin-utils==0.7.7
 pyparsing==3.0.7
-pytest==7.1.2
+pytest==7.1.2  
 python-dateutil==2.8.2
 python-editor==1.0.5
 six==1.15.0
