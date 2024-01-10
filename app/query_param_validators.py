@@ -10,6 +10,6 @@ user_args = {
 
 mood_args = {
     "mood_score": fields.Int(
-        required=True, validate=lambda mood: 0 < mood and mood < 10
+        required=True, validate=lambda mood: 0 <= mood <= 10
     )
 }
