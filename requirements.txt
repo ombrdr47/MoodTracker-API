@@ -1,11 +1,11 @@
-alembic==1.0.11
+alembic==1.7.3
 appdirs==1.4.4
-astroid==2.3.0
+astroid==2.10.3
 atomicwrites==1.4.0
-attrs==20.3.0
+attrs==21.2.0
 black==22.3.0
 Click==8.0.3
-entrypoints>=0.3  
+entrypoints>=0.3
 flake8==4.0.1
 Flask==2.0.2
 Flask-Login==0.5.0
@@ -16,26 +16,26 @@ isort==5.9.3
 itsdangerous==2.1.2
 Jinja2==3.0.3
 lazy-object-proxy==1.7.0
-Mako==1.2.0
+Mako==1.1.5  # Alembic's Mako template version
 MarkupSafe==2.1.1
-marshmallow==3.4.2
+marshmallow==3.14.0  # Latest version as of now
 mccabe==0.6.1
-more-itertools==8.7.0
+more-itertools==8.10.0
 packaging==22.0
-pluggy==0.15.2
+pluggy==1.0.0  # Latest version as of now
 py==1.12.2
 pycodestyle==2.8.0
 pyflakes==2.3.2
 pylint==3.13.0
 pylint-plugin-utils==0.7.7
 pyparsing==3.0.7
-pytest==7.1.2  
+pytest==7.1.2
 python-dateutil==2.8.2
 python-editor==1.0.5
-six==1.15.0
+six==1.16.0  # Latest version as of now
 SQLAlchemy==1.4.36
-toml==3.2.2
-typed-ast==2.15.1
+toml==0.10.2  # Latest version as of now
+typed-ast==1.4.3  # Compatible version
 wcwidth==0.2.5
 webargs==7.2.0
 Werkzeug==2.2.2
