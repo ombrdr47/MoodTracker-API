@@ -8,17 +8,14 @@ from app.helpers import calculate_streak_percentile
 from app.models import User, MoodEntry
 from app.query_param_validators import user_args, mood_args
 
-
 @app.route("/health")
 def check_server():
     """Checks if the server is active."""
     return jsonify({"msg": "Flask is up and running!"})
 
-
 @app.route("/login", methods=["POST", "GET"])
-def login():
+def user_login():
     """Allows users to login"""
-
     args = parser.parse(user_args, request)
 
     user = User.query.filter_by(username=args["username"]).first()
@@ -44,9 +41,8 @@ def login():
     if current_user.is_authenticated:
         return redirect("/mood")
 
-
 @app.route("/getuser")
-def getuser():
+def get_user():
     """Returns active user"""
     user_id = current_user.get_id()
     if user_id:
@@ -58,7 +54,6 @@ def getuser():
         )
     return jsonify({"msg": "There is no current user. Please log in."})
 
-
 @app.route("/logout")
 def logout():
     """Allows users to logout"""
@@ -66,7 +61,6 @@ def logout():
         return redirect("/login")
     logout_user()
     return jsonify({"msg": "You have been logged out."})
-
 
 @app.route("/mood", methods=["POST"])
 @login_required
@@ -81,7 +75,6 @@ def post_mood():
     db.session.add(entry)
     db.session.commit()
     return jsonify(entry.asdict())
-
 
 @app.route("/mood", methods=["GET"])
 @login_required
