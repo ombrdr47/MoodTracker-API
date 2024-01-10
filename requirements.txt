@@ -1,6 +1,6 @@
 alembic==1.7.3
 appdirs==1.4.4
-astroid==2.10.3
+astroid>=2.10,<3.0
 atomicwrites==1.4.0
 attrs==21.2.0
 black==22.3.0
